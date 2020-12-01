@@ -1,6 +1,8 @@
 package no0002;
 
 
+import common.ListNode;
+
 /**
  * 2. 两数相加
  * （链表求和）
