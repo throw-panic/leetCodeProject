@@ -1,5 +1,7 @@
 package common;
 
+import java.security.PublicKey;
+
 /**
  * 实现链表 node、val、next、
  */
@@ -42,4 +44,17 @@ public class ListNode {
         return head.next;
     }
 
+    /**
+     *  todo 打印链表
+     */
+    public static void printListNode(ListNode head) {
+        while (head != null) {
+            if(head.next != null) {
+                System.out.print(head.val + " -> ");
+            }else {
+                System.out.println(head.val);
+            }
+            head = head.next;
+        }
+    }
 }
